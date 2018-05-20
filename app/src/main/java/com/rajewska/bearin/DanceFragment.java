@@ -23,26 +23,26 @@ public class DanceFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
-//        ArrayList of clubs
+//        ArrayList of locations
 
-        final ArrayList<com.rajewska.bearin.Word> words = new ArrayList<>();
-        words.add(new com.rajewska.bearin.Word("Berlin Ostbahnhof, S3 S5 S7 S9",
+        final ArrayList<com.rajewska.bearin.Word> locations = new ArrayList<>();
+        locations.add(new com.rajewska.bearin.Word("Berlin Ostbahnhof, S3 S5 S7 S9",
                 "Berghain", R.drawable.berghain));
-        words.add(new com.rajewska.bearin.Word("Heinrich-Heine-Straße, U8",
+        locations.add(new com.rajewska.bearin.Word("Heinrich-Heine-Straße, U8",
                 "Tresor", R.drawable.tresor));
-        words.add(new com.rajewska.bearin.Word("Schlesisches Tor, U1 U3",
+        locations.add(new com.rajewska.bearin.Word("Schlesisches Tor, U1 U3",
                 "Watergate", R.drawable.watergate));
-        words.add(new com.rajewska.bearin.Word("Brunnenstr./Invalidenstr., 12...",
+        locations.add(new com.rajewska.bearin.Word("Brunnenstr./Invalidenstr., 12...",
                 "ACUD", R.drawable.acud));
-        words.add(new com.rajewska.bearin.Word("Warschauer Str., S3 S5 S7 S9...",
+        locations.add(new com.rajewska.bearin.Word("Warschauer Str., S3 S5 S7 S9...",
                 "Urban Spree", R.drawable.urban));
-        words.add(new com.rajewska.bearin.Word("Schlesisches Tor, U1 U3",
+        locations.add(new com.rajewska.bearin.Word("Schlesisches Tor, U1 U3",
                 "Arena", R.drawable.imbiss));
-        words.add(new com.rajewska.bearin.Word("Warschauer Str., S3 S5 S7 S9...",
+        locations.add(new com.rajewska.bearin.Word("Warschauer Str., S3 S5 S7 S9...",
                 "Suicide Circus", R.drawable.imbiss));
 
 
-        WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.light_pink_bg);
+        WordAdapter adapter = new WordAdapter(getActivity(), locations, R.color.light_pink_bg);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 

@@ -17,12 +17,12 @@ public class WordAdapter extends ArrayAdapter<com.rajewska.bearin.Word> {
      */
     private int mColorResourceId;
 
-    public WordAdapter(Activity context, ArrayList<com.rajewska.bearin.Word> words, int colorResourceId) {
+    public WordAdapter(Activity context, ArrayList<com.rajewska.bearin.Word> locations, int colorResourceId) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
-        super(context, 0, words);
+        super(context, 0, locations);
         mColorResourceId = colorResourceId;
     }
 
@@ -35,7 +35,7 @@ public class WordAdapter extends ArrayAdapter<com.rajewska.bearin.Word> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
+        // Get the object located at this position in the list
         com.rajewska.bearin.Word currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
@@ -46,13 +46,13 @@ public class WordAdapter extends ArrayAdapter<com.rajewska.bearin.Word> {
 
         // Find the TextView in the list_item.xml layout with the ID version_number
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
+        // Get the name from the current object and
+        // set this text on the name TextView
         nameTextView.setText(currentWord.getName());
 
-        // Find the ImageView in the list_item.xml layout with the ID list_item_icon
+        // Find the ImageView in the list_item.xml layout with the ID location_image_view
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.location_image_view);
-        // Get the image resource ID from the current AndroidFlavor object and
+        // Get the image resource ID from the current location object and
         if (currentWord.hasImage()) {
             // set the image to iconView
             imageView.setImageResource(currentWord.getImageResourceId());

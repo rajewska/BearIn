@@ -18,7 +18,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@id/location_image_view"
         android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:paddingLeft="@dimen/padding">
 
         <TextView
             android:id="@+id/name_text_view"
@@ -27,7 +27,8 @@
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -37,7 +38,8 @@
             android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -46,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="@dimen/padding"
         android:src="@drawable/ic_heart_empty" />
 
 </RelativeLayout>

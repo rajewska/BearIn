@@ -25,7 +25,7 @@ public class EatFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
-//        ArrayList of restaurants
+//        ArrayList of locations
 
         final ArrayList<com.rajewska.bearin.Word> words = new ArrayList<com.rajewska.bearin.Word>();
         words.add(new com.rajewska.bearin.Word("Eberswalder Straße, U2",
