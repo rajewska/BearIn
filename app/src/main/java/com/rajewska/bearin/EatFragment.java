@@ -18,7 +18,7 @@ public class EatFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView;
-        rootView = inflater.inflate(R.layout.word_list, container, false);
+        rootView = inflater.inflate(R.layout.location_list, container, false);
 
 //        ArrayList of locations
 

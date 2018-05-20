@@ -18,9 +18,9 @@ public class ExploreFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.word_list, container, false);
+        View rootView = inflater.inflate(R.layout.location_list, container, false);
 
-//        ArrayList of restaurants
+//        ArrayList of locations
 
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location("Adlershof, S8 S9 S45 S46 S85",
@@ -38,7 +38,6 @@ public class ExploreFragment extends Fragment {
         locations.add(new Location("Rosenthaler Platz, U8",
                 "Teufelsberg", R.drawable.teufel));
 
-
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.light_blue_bg);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
@@ -47,5 +46,4 @@ public class ExploreFragment extends Fragment {
 
         return rootView;
     }
-
 }

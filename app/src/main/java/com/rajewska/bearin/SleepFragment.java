@@ -18,9 +18,9 @@ public class SleepFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.word_list, container, false);
+        View rootView = inflater.inflate(R.layout.location_list, container, false);
 
-//        ArrayList of hostels
+//        ArrayList of locations
 
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location("Ostkreuz, S3 S5 S7 S8 S41 S42",
@@ -37,7 +37,6 @@ public class SleepFragment extends Fragment {
                 "Citystay Hostel Berlin", R.drawable.citystay));
         locations.add(new Location("Rosa Luxemburg Platz, U2",
                 "Wombat's Berlin", R.drawable.wombat));
-
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.light_pink_bg);
 

@@ -12,7 +12,8 @@
         android:id="@+id/tabs"
         style="@style/CategoryTab"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/blue"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

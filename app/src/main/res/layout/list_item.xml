@@ -26,9 +26,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="18sp"
+            android:textSize="@dimen/li_title"
             android:textStyle="bold" />
 
         <TextView
@@ -37,9 +36,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="14sp" />
+            android:textSize="@dimen/li_subtitle" />
 
     </LinearLayout>
 

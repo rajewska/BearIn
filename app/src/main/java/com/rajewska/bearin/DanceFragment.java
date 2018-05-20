@@ -9,16 +9,14 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-
 public class DanceFragment extends Fragment {
     public DanceFragment() {
         // Required empty public constructor
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.word_list, container, false);
+        View rootView = inflater.inflate(R.layout.location_list, container, false);
 
 //        ArrayList of locations
 
@@ -36,8 +34,7 @@ public class DanceFragment extends Fragment {
         locations.add(new Location("Schlesisches Tor, U1 U3",
                 "Arena", R.drawable.arena));
         locations.add(new Location("Warschauer Str., S3 S5 S7 S9...",
-                "Suicide Circus", R.drawable.circus));
-
+                "Suicide Circus", R.drawable.suicide));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.light_pink_bg);
 

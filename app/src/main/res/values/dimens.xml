@@ -2,4 +2,6 @@
 <resources>
     <dimen name="list_item_height">90dp</dimen>
     <dimen name="padding">16dp</dimen>
+    <dimen name="li_title">18sp</dimen>
+    <dimen name="li_subtitle">14sp</dimen>
 </resources>

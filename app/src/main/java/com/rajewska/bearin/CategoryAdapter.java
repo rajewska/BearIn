@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class CategoryAdapter extends FragmentPagerAdapter {
     /** Context of the app */
     private Context mContext;
-
     /**
      * Create a new {@link CategoryAdapter} object.
      *
@@ -20,7 +19,6 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         super(fm);
         mContext = context;
     }
-
     /**
      * Return the {@link Fragment} that should be displayed for the given page number.
      */
@@ -36,7 +34,6 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             return new SleepFragment();
         }
     }
-
     /**
      * Return the total number of pages.
      */

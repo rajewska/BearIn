@@ -12,9 +12,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class LocationAdapter extends ArrayAdapter<Location> {
-    /**
-     * Resource ID for the background color for this list of words
-     */
+
+//    Resource ID for the background color for this list of words
     private int mColorResourceId;
 
     public LocationAdapter(Activity context, ArrayList<Location> locations, int colorResourceId) {
@@ -25,7 +24,6 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         super(context, 0, locations);
         mColorResourceId = colorResourceId;
     }
-
 
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
@@ -38,13 +36,14 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         // Get the object located at this position in the list
         Location currentLocation = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the list_item.xml layout with the ID location_text_view
         TextView locationTextView = (TextView) listItemView.findViewById(R.id.location_text_view);
-        // Get the version name from the current AndroidFlavor object and
+        // Get the location name from the current location object and
         // set this text on the name TextView
+        assert currentLocation != null;
         locationTextView.setText(currentLocation.getLocation());
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
+        // Find the TextView in the list_item.xml layout with the ID name_text_view
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);
         // Get the name from the current object and
         // set this text on the name TextView
