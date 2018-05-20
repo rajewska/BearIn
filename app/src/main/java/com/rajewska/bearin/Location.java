@@ -1,6 +1,6 @@
 package com.rajewska.bearin;
 
-public class Word {
+public class Location {
     /**
      * Location
      */
@@ -23,11 +23,12 @@ public class Word {
     private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
-     * Create a new Word object
+     * Create a new Location object
      */
-    public Word(String location, String name, int urban) {
+    public Location(String location, String name, int imageResourceId) {
         mLocation = location;
         mName = name;
+        mImageResourceId =imageResourceId;
     }
     /**
      * Get the location
