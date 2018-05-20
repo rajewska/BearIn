@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BearIn</string>
+    <string name="category_explore">explore</string>
+    <string name="category_dance">dance</string>
+    <string name="category_eat">eat</string>
+    <string name="category_sleep">sleep</string>
+</resources>
