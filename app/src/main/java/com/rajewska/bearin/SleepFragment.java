@@ -23,20 +23,20 @@ public class SleepFragment extends Fragment {
 //        ArrayList of locations
 
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("Ostkreuz, S3 S5 S7 S8 S41 S42",
-                "a&o Berlin Friedrichshain", R.drawable.ao));
-        locations.add(new Location("Rosenthaler Platz, U8",
-                "The Circus Hotel", R.drawable.circus));
-        locations.add(new Location("Möckernbrücke, U1 U3 U7",
-                "Grand Hostel Berlin", R.drawable.grand));
-        locations.add(new Location("Stadtmitte, U2, U6",
-                "Cityhostel Berlin", R.drawable.cityhostel));
-        locations.add(new Location("Alexander Platz, U2 U6 U8 S3...",
-                "ONE80°", R.drawable.one80));
-        locations.add(new Location("Alexander Platz, U2 U6 U8 S3...",
-                "Citystay Hostel Berlin", R.drawable.citystay));
-        locations.add(new Location("Rosa Luxemburg Platz, U2",
-                "Wombat's Berlin", R.drawable.wombat));
+        locations.add(new Location(getString(R.string.ostkreuz),
+                getString(R.string.ao), R.drawable.ao));
+        locations.add(new Location(getString(R.string.rosenthaler),
+                getString(R.string.circus), R.drawable.circus));
+        locations.add(new Location(getString(R.string.mockern),
+                getString(R.string.grand), R.drawable.grand));
+        locations.add(new Location(getString(R.string.stadtmitte),
+                getString(R.string.cityhostel), R.drawable.cityhostel));
+        locations.add(new Location(getString(R.string.alex),
+                getString(R.string.one80), R.drawable.one80));
+        locations.add(new Location(getString(R.string.alex),
+                getString(R.string.citystay), R.drawable.citystay));
+        locations.add(new Location(getString(R.string.rosalux),
+                getString(R.string.wombat), R.drawable.wombat));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.light_pink_bg);
 

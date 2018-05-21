@@ -4,4 +4,5 @@
     <dimen name="padding">16dp</dimen>
     <dimen name="li_title">18sp</dimen>
     <dimen name="li_subtitle">14sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

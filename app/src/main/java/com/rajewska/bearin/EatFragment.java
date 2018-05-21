@@ -23,20 +23,20 @@ public class EatFragment extends Fragment {
 //        ArrayList of locations
 
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("Eberswalder Straße, U2",
-                "Minty", R.drawable.minty));
-        locations.add(new Location("Görlitzer Bahnhof, U1",
-                "Kimchi Princess", R.drawable.kimchi));
-        locations.add(new Location("Rosenthaler Platz, U8",
-                "W-Der Imbiss", R.drawable.imbiss));
-        locations.add(new Location("Eberswalder Straße, U2",
-                "Prater", R.drawable.prater));
-        locations.add(new Location("Schönleinstraße, U8",
-                "Burrito Baby", R.drawable.burrito));
-        locations.add(new Location("Schwedter Str., M1 12",
-                "Babel", R.drawable.babel));
-        locations.add(new Location("Prenzlauer Allee, S1, S8, S41...",
-                "Agni", R.drawable.agni));
+        locations.add(new Location(getString(R.string.eberswalder),
+                getString(R.string.minty), R.drawable.minty));
+        locations.add(new Location(getString(R.string.gorli),
+                getString(R.string.kimchi), R.drawable.kimchi));
+        locations.add(new Location(getString(R.string.rosenthaler),
+                getString(R.string.imbiss), R.drawable.imbiss));
+        locations.add(new Location(getString(R.string.eberswalder),
+                getString(R.string.prater), R.drawable.prater));
+        locations.add(new Location(getString(R.string.schonlein),
+                getString(R.string.burrito), R.drawable.burrito));
+        locations.add(new Location(getString(R.string.schwedter),
+                getString(R.string.babel), R.drawable.babel));
+        locations.add(new Location(getString(R.string.prenzlauer),
+                getString(R.string.agni), R.drawable.agni));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.light_blue_bg);
 

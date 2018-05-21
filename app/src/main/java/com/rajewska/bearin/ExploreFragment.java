@@ -23,20 +23,20 @@ public class ExploreFragment extends Fragment {
 //        ArrayList of locations
 
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("Adlershof, S8 S9 S45 S46 S85",
-                "Aerodynamic Park", R.drawable.aerodynamic));
-        locations.add(new Location("Kottbuser Tor, U1 U8",
-                "Museum of Things", R.drawable.museum));
-        locations.add(new Location("Nollendorfplatz, U1 U2 U3 U4",
-                "Bauhaus Archive", R.drawable.bauhaus));
-        locations.add(new Location("Karlshorst, S3",
-                "Model Park", R.drawable.model));
-        locations.add(new Location("Möckernbrücke, U1 U3 U7",
-                "Liquidrom", R.drawable.liquidrom));
-        locations.add(new Location("Eberswalder Straße, U2",
-                "Mauerpark", R.drawable.mauer));
-        locations.add(new Location("Rosenthaler Platz, U8",
-                "Teufelsberg", R.drawable.teufel));
+        locations.add(new Location(getString(R.string.adlershof),
+                getString(R.string.aerodynamic), R.drawable.aerodynamic));
+        locations.add(new Location(getString(R.string.kotti),
+                getString(R.string.things), R.drawable.museum));
+        locations.add(new Location(getString(R.string.nollendorf),
+                getString(R.string.bauhaus), R.drawable.bauhaus));
+        locations.add(new Location(getString(R.string.karlshorst),
+                getString(R.string.model), R.drawable.model));
+        locations.add(new Location(getString(R.string.mockern),
+                getString(R.string.liquidrom), R.drawable.liquidrom));
+        locations.add(new Location((getString(R.string.eberswalder)),
+                getString(R.string.mauer), R.drawable.mauer));
+        locations.add(new Location(getString(R.string.rosenthaler),
+                getString(R.string.teufel), R.drawable.teufel));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.light_blue_bg);
 

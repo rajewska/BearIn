@@ -21,20 +21,20 @@ public class DanceFragment extends Fragment {
 //        ArrayList of locations
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("Berlin Ostbahnhof, S3 S5 S7 S9",
-                "Berghain", R.drawable.berghain));
-        locations.add(new Location("Heinrich-Heine-Straße, U8",
-                "Tresor", R.drawable.tresor));
-        locations.add(new Location("Schlesisches Tor, U1 U3",
-                "Watergate", R.drawable.watergate));
-        locations.add(new Location("Brunnenstr./Invalidenstr., 12...",
-                "ACUD", R.drawable.acud));
-        locations.add(new Location("Warschauer Str., S3 S5 S7 S9...",
-                "Urban Spree", R.drawable.urban));
-        locations.add(new Location("Schlesisches Tor, U1 U3",
-                "Arena", R.drawable.arena));
-        locations.add(new Location("Warschauer Str., S3 S5 S7 S9...",
-                "Suicide Circus", R.drawable.suicide));
+        locations.add(new Location(getString(R.string.ostbahnhof),
+                getString(R.string.berghain), R.drawable.berghain));
+        locations.add(new Location(getString(R.string.heinrich),
+                getString(R.string.tresor), R.drawable.tresor));
+        locations.add(new Location(getString(R.string.schlesi),
+                getString(R.string.watergate), R.drawable.watergate));
+        locations.add(new Location(getString(R.string.brunnen),
+                getString(R.string.acud), R.drawable.acud));
+        locations.add(new Location(getString(R.string.warschauer),
+                getString(R.string.urban), R.drawable.urban));
+        locations.add(new Location(getString(R.string.schlesi),
+                getString(R.string.arena), R.drawable.arena));
+        locations.add(new Location(getString(R.string.warschauer),
+                getString(R.string.suicide), R.drawable.suicide));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.light_pink_bg);
 
